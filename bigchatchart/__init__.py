@@ -1,5 +1,5 @@
-from .chatchart import Chatchart
+from .bigchatchart import BigChatChart
 
 
 def setup(bot):
-    bot.add_cog(Chatchart(bot))
+    bot.add_cog(BigChatChart(bot))
