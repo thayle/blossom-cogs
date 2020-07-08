@@ -17,7 +17,7 @@ plt.switch_backend("agg")
 from redbot.core import commands
 
 
-class Chatchart(commands.Cog):
+class BigChatChart(commands.Cog):
     """Show activity."""
 
     def __init__(self, bot):
@@ -81,7 +81,7 @@ class Chatchart(commands.Cog):
     @commands.command()
     @commands.cooldown(1, 10, commands.BucketType.channel)
     @commands.max_concurrency(1, commands.BucketType.channel)
-    async def chatchart(self, ctx, channel: Optional[discord.TextChannel] = None, messages=50000):
+    async def bigchatchart(self, ctx, channel: Optional[discord.TextChannel] = None, messages=50000):
         """
         Generates a pie chart, representing the last 5000 messages in the specified channel.
         """
