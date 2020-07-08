@@ -81,7 +81,7 @@ class BigChatChart(commands.Cog):
     @commands.command()
     @commands.cooldown(1, 10, commands.BucketType.channel)
     @commands.max_concurrency(1, commands.BucketType.channel)
-    async def bigchatchart(self, ctx, channel: Optional[discord.TextChannel] = None, messages=50000):
+    async def bigchatchart(self, ctx, channel: Optional[discord.TextChannel] = None, messages=500000):
         """
         Generates a pie chart, representing the last 5000 messages in the specified channel.
         """
