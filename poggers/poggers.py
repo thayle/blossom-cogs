@@ -46,7 +46,8 @@ class Poggers(BaseCog):
 
         # Build Embed
         embed = discord.Embed()
-        embed.description = f"**{author.mention} Poggers {user.mention}**"
+        embed.description = f"**{author.mention} hugs {user.mention}**"
+        embed.set_footer(text="Made with the help of nekos.life")
         embed.set_image(url=images[i])
         await ctx.send(embed=embed)
 
