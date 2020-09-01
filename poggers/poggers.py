@@ -12,11 +12,7 @@ class Poggers(BaseCog):
 
     @commands.command()
     @commands.bot_has_permissions(embed_links=True, add_reactions=True)
-    async def poggers(self, ctx, *, entry_number=None):
+    async def poggers(self, ctx, *, entry_number=None, arg):
         """Show something is poggers"""
 
-        # Build Embed
-        embed = discord.Embed()
-        embed.url = "https://cdn.discordapp.com/attachments/656930670374944829/750344767543574639/poggers.mp4"
-        embed.description = f"**{author.mention} thinks something is Poggers!**"
-        await ctx.send(embed=embed)
+        await ctx.send(arg)
