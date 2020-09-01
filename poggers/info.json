@@ -1,0 +1,9 @@
+{
+  "author" : ["Riley"],
+  "bot_version": [3,0,0],
+  "install_msg" : "Show something is poggers with ease",
+  "short" : "Poggers",
+  "description" : "Send a user poggers video",
+  "tags" : ["interaction", "roleplay", "mp4"],
+  "hidden" : false
+}
